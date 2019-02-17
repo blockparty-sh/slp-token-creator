@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="bootstrap-material-design-dist/css/bootstrap-material-design.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+		<link rel="stylesheet" href="css/chosen.min.css">
+		<link rel="stylesheet" href="css/chosen-material-theme.css">
+        <link rel="stylesheet" href="css/app.css">
+
+        <title>SLP Token Generator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-4">SLP Token Generator</h1>
+                <p class="lead">
+                    Create your very own SLP token in just a few steps.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <form>
+                        <div class="card">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-info bmd-btn-fab bmd-btn-fab-sm" style="position:absolute; right:1rem; top:1rem;">
+                                    <i class="material-icons">cached</i>
+                                </button>
+                                <h5 class="card-title">
+                                    Scatter Plot Graphing Tool
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#help-modal">Help</button>
+                                </h5>
+
+                                <div class="form-row">
+                                    <div class="col form-group bmd-form-group">
+                                        <label for="name" class="bmd-label-floating">Name</label>
+                                        <input class="form-control" type="text" id="name" value="">
+                                        <span class="bmd-help">Name</span>
+                                    </div>
+                                    <div class="col form-group bmd-form-group">
+                                        <label for="token" class="bmd-label-floating">Token</label>
+                                        <input class="form-control" type="text" id="token" value="">
+                                        <span class="bmd-help">token</span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col form-group bmd-form-group">
+                                        <label for="initial-quantity" class="bmd-label-floating">Initial Quantity</label>
+                                        <input class="form-control" type="number" id="initial-quantity" min="0" value="21000000" required>
+                                        <span class="bmd-help">Initial Quantity</span>
+                                    </div>
+                                    <div class="col form-group bmd-form-group">
+                                        <label for="decimals" class="bmd-label-floating">Decimals</label>
+                                        <input class="form-control" type="number" id="decimals" min="0" max="9" value="2" required>
+                                        <span class="bmd-help">Decimals</span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col form-group bmd-form-group">
+                                        <label for="document-uri" class="bmd-label-floating">Document URI</label>
+                                        <input class="form-control" type="text" id="document-uri" value="">
+                                        <span class="bmd-help">Document URI</span>
+                                    </div>
+                                    <div class="col form-group bmd-form-group">
+                                        <label for="document-hash" class="bmd-label-floating">Document Hash</label>
+                                        <input class="form-control" type="text" id="document-hash" value="">
+                                        <span class="bmd-help">Document Hash</span>
+                                    </div>
+                                </div>
+                                <div class="form-group bmd-form-group">
+                                    <label for="funding-address" class="bmd-label-floating">Funding Address</label>
+                                    <input class="form-control" type="text" id="funding-address" value="" required>
+                                    <span class="bmd-help">funding address</span>
+                                </div>
+                                <div class="form-group bmd-form-group">
+                                    <label for="funding-wif" class="bmd-label-floating">Funding Wif</label>
+                                    <input class="form-control" type="text" id="funding-wif" value="" required>
+                                    <span class="bmd-help">funding wif</span>
+                                </div>
+                                <div class="form-group bmd-form-group">
+                                    <label for="token-receiver-address" class="bmd-label-floating">Token Receiver Address</label>
+                                    <input class="form-control" type="text" id="token-receiver-address" value="" required>
+                                    <span class="bmd-help">token receiver address</span>
+                                </div>
+                                <div class="form-group bmd-form-group">
+                                    <label for="baton-receiver-address" class="bmd-label-floating">Baton Receiver Address</label>
+                                    <input class="form-control" type="text" id="baton-receiver-address" value="" required>
+                                    <span class="bmd-help">baton receiver address</span>
+                                </div>
+                                <div class="form-group bmd-form-group">
+                                    <label for="change-address" class="bmd-label-floating">Change Address</label>
+                                    <input class="form-control" type="text" id="change-address" value="">
+                                    <span class="bmd-help">bch change receiver address</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="help-modal" tabindex="-1" role="dialog" aria-labelledby="help-modal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Help</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>TODO</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="bootstrap-material-design-dist/js/popper.js"></script>
+        <script src="bootstrap-material-design-dist/js/bootstrap-material-design.js"></script>
+        <script src="js/chosen.jquery.js"></script>
+
+        <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+    </body>
+</html>

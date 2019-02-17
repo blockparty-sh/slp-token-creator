@@ -1,0 +1,15 @@
+body {
+    padding-top: 70px;
+}
+
+.chosen-disabled .chosen-single {
+    background-color:inherit!important;
+    color: #a5a5a5!important;
+}
+
+.chosen-container {
+    width:inherit!important;
+}
+
+.form-group { margin-bottom:0!important; }
+label.bmd-label-static { white-space:nowrap!important;  }
